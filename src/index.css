@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Josefin+Sans:ital@1&display=swap');
+:root {
+  --bg-color: #000;
+  --primary-text-color: #f7f7f7;
+  --bg-container-primary: #1b1b1b;
+  --bg-container-secondary: #221014;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 ;
+  text-decoration: none !important;
+  list-style: none !important;
+  color: var(--primary-text-color);
+  font-size: 18px;
+}
+
+#root {
+  background-color: var(--bg-color);
+}

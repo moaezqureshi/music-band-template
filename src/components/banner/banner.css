@@ -1,0 +1,60 @@
+.banner {
+    position: relative;
+}
+
+.banner .banner-container,
+.banner .banner-container img {
+    width: 100%;
+
+}
+
+.banner-detail {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    right: 30%;
+    padding: 40px;
+    /* background-color: var(--bg-container-secondary); */
+    margin: auto;
+    animation: bannerText 6s 3s 1 both;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+}
+
+.banner .banner-container img {
+    object-fit: cover;
+    max-height: 90vh;
+    animation: bannerImage 5s 1 both;
+}
+
+
+@keyframes bannerImage {
+    from {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        filter: brightness(40%);
+        /* filter: blur(8px);
+        -webkit-filter: blur(8px); */
+    }
+}
+
+@keyframes bannerText {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
