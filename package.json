@@ -2,11 +2,14 @@
   "name": "gymteplate",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://moaezqureshi.github.io/music-band-template/",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "preview": "vite preview"
   },
   "dependencies": {
